@@ -30,6 +30,7 @@ class CustomPage {
     ]);
   }
   async getContentsFrom(selector) {
+    console.log(selector);
     return await this.page.$eval(selector, el => el.innerHTML);
   }
   async get(path) {
